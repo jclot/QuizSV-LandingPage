@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,48 +48,52 @@
                         <div class="text">
                             <h3>Help</h3>
                             <h6>If you need help using this application, check this page. </h6>
-                            <a class="button" href="#">Download Now</a>
+                            <a class="button" href="#project">Help Info</a>
                         </div>
                     </div>
-                    <!-- <div class="col-md-6">
+                    <div class="col-md-6">
                         <div class="header_video">
-                            <img src="./images/undraw_Spreadsheet_re_cn18.png" width="100%" height="100%">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </header>
-        <section class="project">
+        <section class="project" id="project">
             <div class="text">
-                <h2>Easy & Useful</h2>
-                <p>This tool simplifies the monitoring of a student during an exam.</p>
+                <h2>Help</h2>
+                <p>In this section you will find all the information about the application.</p>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 project_icon">
                         <div class="single_project">
-                            <i class="icofont icofont-worker"></i>
-                            <h3><a href="#">Created specifically for not being able to copy.</a></h3>
-                            <p>This tool is specifically created to not be able to copy in the tests, since the pandemic has affected all of us, it can be very useful.</p>
+                            <i class="icofont icofont-check"></i>
+                            <h3><a href="#">How to use this application specifically?</a></h3>
+                            <p>When you have installed the application two buttons will appear saying (Start | Show Instructions) if you press the start button you will go to the video recording where you can edit everything and start recording the screen, if you press the show instructions button then you will find the instructions of how to start in the application.</p>
+                            <img src="../img/Screen Shot 2020-12-03 at 2.07.29 AM.png" style="border-radius: 7px;" width="400" height="300">
                         </div>
                     </div>
                     <div class="col-md-4 project_icon">
                         <div class="single_project">
-                            <i class="icofont icofont-ui-calendar"></i>
-                            <h3><a href="#">Easy to use.</a></h3>
-                            <p>This tool is very easy to use, just by choosing a screen and start recording you have everything ready. For more information go to.</p>
+                            <i class="icofont icofont-edit"></i>
+                            <h3><a href="#">How do you see the application directly? where is each thing? how do you modify it?</a></h3>
+                            <p>When you start the application and press start, you will find different buttons and a black screen. The buttons are (choose screen | stop screen | start recording | stop recording | choose extension file) when you press choose screen a small menu will open where you can choose from the available screens to show them, if you press stop screen will stop presenting the screen and return to the start, when you press start recording and stop recording simply what to do is to start recording the screen, but of course first you have to put the screen and finally if you press choose extension file you will find a menu where you can choose the different extensions to save the video.</p>
+                            <img src="../img/Screen Shot 2020-12-03 at 2.08.05 AM.png" style="border-radius: 7px;" width="400" height="300">
                         </div>
                     </div>
                     <div class="col-md-4 project_icon">
                         <div class="single_project">
-                            <i class="icofont icofont-runner-alt-1"></i>
-                            <h3><a href="#">Quick to use.</a></h3>
-                            <p>Since this is done in a very optimized environment, it is very fast to use and fast to load.
+                            <i class="icofont icofont-warning-alt"></i>
+                            <h3><a href="#">How do I give permission to the application to record and display the screen?</a></h3>
+                            <p>If you are a mac user then this information will be very useful, when you download the application you have to give some permissions to the application to do some things, when you try to record or display the screen will ask you to go to system preferences then Security & Privacy and you will see a menu with 4 buttons simply go to the one that says general and below all give the button that is called open anyways, or you appear then cancel the alert that the system launched or try to record or display the screen again.  
                             </p>
+                            <img src="../img/Screen Shot 2020-12-03 at 2.09.06 AM.png" style="border-radius: 7px;" width="400" height="300">
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <p class="button"><a class="button" href="#">Get started</a></p>
+                        <p class="button"><a class="button" href="./Dowload.html">Download</a></p>
                     </div>
                 </div>
             </div>
@@ -105,14 +109,14 @@
                 <div class="row">
                     <div class="col md-12">
                         <div class="form_area">
-                            <form action="#" method="post">
+                            <form action="./php/contact.php" method="POST">
                                 <div class="input_area">
-                                    <input type="text" name="" placeholder="First Name">
-                                    <input type="text" name="" placeholder="Last Name">
-                                    <input type="email" name="" placeholder="Email">
-                                    <input type="text" name="" placeholder="Phone">
+                                    <input type="text" name="first_name" placeholder="First Name">
+                                    <input type="text" name="last_name" placeholder="Last Name">
+                                    <input type="email" name="email" placeholder="Email">
+                                    <input type="text" name="phone" placeholder="Phone">
                                 </div>
-                                <textarea name="" placeholder="Message" ></textarea>
+                                <textarea name="message" placeholder="Message" ></textarea>
                                 <input type="submit" value="SEND">
                             </form>
                         </div>
@@ -120,6 +124,7 @@
                 </div>
             </div>
         </section>
+        
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -129,8 +134,8 @@
                         </div>
                         <div class="footer_first_menu">
                             <ul>
-                                <li><a href="#">Privecy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="PrivacyPolicy.html" target="_blank">Privacy Policy</a></li>
+                                <li><a href="Terms&Conditions.html" target="_blank">Terms & Conditions</a></li>
                             </ul>
                         </div>
                     </div>
