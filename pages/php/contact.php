@@ -10,6 +10,14 @@
  $subject = "Contact Form";
  $mailheader = "From: $email \r\n";
  mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
- header('Location: ../Help.html');
+ 
+ if (isset($_POST['submit']))
+ {   
+ ?>
+<script type="text/javascript">
+window.location = "https://quizsv.netlify.app/pages/help";
+</script>      
+ <?php
+ }
 
 ?>
