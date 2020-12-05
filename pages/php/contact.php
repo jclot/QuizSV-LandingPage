@@ -20,4 +20,4 @@ window.location = "https://quizsv.netlify.app/pages/help";
  <?php
  }
 
-?>
+?> 
